@@ -1,0 +1,140 @@
+.navigation-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #002137;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+  margin-left: 80px;
+  margin-top: 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  margin-right: 100px;
+}
+
+.text-wrapper {
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.content-container {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 80px; /* Adjust the top margin to provide space for the navigation menu */
+}
+
+
+.add-election-text {
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #002137;
+  font-size: 60px;
+  margin-top: 16vh; /* Add margin-top to create space from the top */
+}
+
+.election-table-container {
+  margin-top: 20px;
+  width: 80%;
+  font-family: "Inter", Helvetica;
+}
+
+.action-cell {
+  text-align: right; /* Align buttons to the right within the cell */
+  padding-right: 5%;
+}
+
+.action-header {
+  text-align: right; /* Align the "Action" text to the right in the header */
+  padding-right: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  text-align: left;
+  border: 0; /* Set border to zero */
+}
+
+th, td {
+  padding: 10px;
+  border: none;
+}
+
+th {
+  background-color: #002137;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  padding-left: 80px; /* Adjust the padding value as needed */
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #002137;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #00407a;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 150px;
+    height: 50px;
+  }
+
+  .navbar {
+    gap: 25px;
+  }
+
+  .text-wrapper {
+    font-size: 20px;
+  }
+}

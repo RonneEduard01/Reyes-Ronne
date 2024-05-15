@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('img/bg-circles-1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 85%;
+    max-width: 650px;
+    background: transparent;
+    padding: 24px;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px #ffffff;
+    top: 400px;
+    padding-top: 500px;
+}
+
+.container img {
+    position: center;
+    width: 400;
+    height: 154px;
+    margin-left: 64px;
+}
+
+
+
+.form-title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 29px;
+    justify-content: space-between;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.gender-title{
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: #09609b;
+}
+
+.form-submit-btn input:hover{
+    background: #09609b;
+    color: rgb(255, 255, 255);
+}
+
+.input-group {
+  display: flex;
+  flex-direction:row;
+  width: 80%px;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.input-button{
+    padding-left: 150px
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.input-field select,
+.input-field input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 2px solid #485d68;
+  background: transparent;
+  color: black;
+  outline: none;
+}
+
+.input-field label {
+  position: absolute;
+  font-family: "Montserrat-Regular", Helvetica;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 15px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Animation for "Enter Birthday" and "Select Gender" input fields */
+.birthday-field input:not(:placeholder-shown) ~ label,
+.birthday-field input:focus ~ label,
+.birthday-field input:valid ~ label,
+.birthday-field select:not(:placeholder-shown) ~ label,
+.birthday-field select:focus ~ label,
+.birthday-field select:valid ~ label {
+  top: 0;
+  left: 15px;
+  bottom: 10px;
+  font-size: 15px;
+  padding: 0 2px;
+  background: none;
+}
+
+/* Animation for both "Enter email" and "Enter password" input fields */
+.birthday-field input:focus {
+  border: 2px solid #09609b;
+}
+
+input:focus {
+  border: 2px solid #09609b;
+}
+input:not(:empty) ~ label,
+input:focus ~ label,
+input:valid ~ label {
+  top: 0;
+  left: 15px;
+  bottom: 10px;
+  font-size: 15px;
+  padding: 0 2px;
+  background: none;
+  width: 100%;
+}
+
+.input-field.address-field input ~ label {
+  top: 0;
+  left: 15px;
+  bottom: 10px;
+  font-size: 15px;
+  padding: 0 2px;
+  background: none;
+}
+
+.input-field.address-field input:focus {
+  border: 2px solid #09609b;
+}
+
+.input-field.address-field input::placeholder {
+  font-size: 10px; /* Adjust the font size as needed */
+          white-space: pre-line;
+      overflow-wrap: break-word;
+}
+
+.input-field.address-field input:not(:empty) ~ label,
+.input-field.address-field input:focus ~ label {
+  top: 0;
+  left: 15px;
+  bottom: 10px;
+  font-size: 15px;
+  padding: 0 2px;
+  background: none;
+  width: 110%;
+}
+
+.login-button {
+  background-color: #002137;
+  font-family: "Montserrat-Regular", Helvetica;
+  color: white;
+  border-radius: 10px; /* Rounded border */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: none; /* Remove shadow */
+  margin-bottom: 20px; /* Add 1 inch of space */
+  border: none;
+
+}
+
+
+.login-button:hover {
+  background-color: #09609b;
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}

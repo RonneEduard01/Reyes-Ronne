@@ -1,0 +1,183 @@
+.admin-login {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+.admin-login .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1076px;
+  position: relative;
+}
+
+.admin-login .navigation-menu {
+  position: absolute;
+  width: 1920px;
+  height: 112px;
+  top: 0;
+  left: 0;
+  background-color: #002137;
+}
+
+.admin-login .navbar {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 75px;
+  position: absolute;
+  top: 39px;
+  left: 1180px;
+}
+
+.admin-login .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.admin-login .logo {
+  position: absolute;
+  width: 263px;
+  height: 93px;
+  top: 14px;
+  left: 107px;
+  object-fit: cover;
+}
+
+.admin-login .overlap {
+  position: absolute;
+  width: 1920px;
+  height: 964px;
+  top: 112px;
+  left: 0;
+}
+
+.admin-login .text-wrapper-2 {
+  position: absolute;
+  top: 296px;
+  left: 715px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #002137;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.admin-login .img {
+  position: absolute;
+  width: 562px;
+  height: 217px;
+  top: 80px;
+  left: 679px;
+  object-fit: cover;
+}
+
+.admin-login .bg-circles {
+  position: absolute;
+  width: 1920px;
+  height: 964px;
+  top: 0;
+  left: 0;
+}
+
+.admin-login .group {
+  top: 628px;
+  left: 701px;
+  position: absolute;
+  width: 515px;
+  height: 64px;
+}
+
+.admin-login .overlap-group {
+  position: relative;
+  width: 513px;
+  height: 64px;
+  background-color: #6aa4f0;
+  border-radius: 16px;
+}
+
+.admin-login .login {
+  position: absolute;
+  top: 17px;
+  left: 225px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.admin-login .overlap-wrapper {
+  top: 519px;
+  left: 704px;
+  position: absolute;
+  width: 515px;
+  height: 64px;
+}
+
+.admin-login .div-wrapper {
+  position: relative;
+  width: 513px;
+  height: 64px;
+  border-radius: 16px;
+  border: 3px solid;
+  border-color: #bdbdbd;
+}
+
+.admin-login .text-wrapper-3 {
+  position: absolute;
+  top: 17px;
+  left: 35px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #9d9d9d;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.admin-login .overlap-group-wrapper {
+  top: 410px;
+  left: 704px;
+  position: absolute;
+  width: 515px;
+  height: 64px;
+}
+.admin-login .navbar a {
+  text-decoration: none;
+  color: white; 
+  position: relative;
+  cursor: pointer;
+}
+
+.admin-login .navbar a:hover {
+  color: #ffffff; 
+  background-color: transparent; 
+}
+
+.admin-login .navbar a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; 
+  height: 2px; 
+  background-color: transparent;
+}
